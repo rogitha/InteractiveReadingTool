@@ -12,36 +12,42 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = InteractiveReadingTool
-build_property.ProjectDir = /Users/rogithaluecke/341/Project/InteractiveReadingTool/InteractiveReadingTool/
+build_property.ProjectDir = C:\Users\jaker\Source\Repos\InteractiveReadingTool\InteractiveReadingTool\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[/Users/rogithaluecke/341/Project/InteractiveReadingTool/InteractiveReadingTool/App.xaml]
+[C:/Users/jaker/Source/Repos/InteractiveReadingTool/InteractiveReadingTool/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = InteractiveReadingTool.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[/Users/rogithaluecke/341/Project/InteractiveReadingTool/InteractiveReadingTool/AppShell.xaml]
+[C:/Users/jaker/Source/Repos/InteractiveReadingTool/InteractiveReadingTool/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = InteractiveReadingTool.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[/Users/rogithaluecke/341/Project/InteractiveReadingTool/InteractiveReadingTool/MainPage.xaml]
+[C:/Users/jaker/Source/Repos/InteractiveReadingTool/InteractiveReadingTool/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = InteractiveReadingTool.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[/Users/rogithaluecke/341/Project/InteractiveReadingTool/InteractiveReadingTool/Resources/Styles/Colors.xaml]
+[C:/Users/jaker/Source/Repos/InteractiveReadingTool/InteractiveReadingTool/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = InteractiveReadingTool.Resources.Styles.Colors.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[/Users/rogithaluecke/341/Project/InteractiveReadingTool/InteractiveReadingTool/Resources/Styles/Styles.xaml]
+[C:/Users/jaker/Source/Repos/InteractiveReadingTool/InteractiveReadingTool/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = InteractiveReadingTool.Resources.Styles.Styles.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/jaker/Source/Repos/InteractiveReadingTool/InteractiveReadingTool/StudentDirectory.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InteractiveReadingTool.StudentDirectory.xaml
+build_metadata.AdditionalFiles.TargetPath = StudentDirectory.xaml
+build_metadata.AdditionalFiles.RelativePath = StudentDirectory.xaml
