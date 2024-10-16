@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InteractiveReadingTool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b2ee9b7f25bbd2dc7aafe96b5b280cd296cec8b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ab98fd8aba91f4b1e2a47bf1e18e52e0ed457541")]
 [assembly: System.Reflection.AssemblyProductAttribute("InteractiveReadingTool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InteractiveReadingTool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

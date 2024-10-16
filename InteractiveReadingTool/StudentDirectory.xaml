@@ -3,10 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="InteractiveReadingTool.StudentDirectory"
              Title="StudentDirectory">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <VerticalStackLayout Grid.Column="0">
+            <Label Text="Students" FontSize="Large"/>
+        </VerticalStackLayout>
+        <VerticalStackLayout Grid.Column="1">
+            <Label Text="Student Details" FontSize="Large"/>
+        </VerticalStackLayout>
+    </Grid>
 </ContentPage>
