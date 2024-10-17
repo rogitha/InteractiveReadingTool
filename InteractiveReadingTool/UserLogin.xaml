@@ -1,19 +1,23 @@
-<Window x:Class="LoginApp.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Login Screen" Height="350" Width="400">
-    <Grid>
-        <TextBlock Text="Login" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0"/>
+<ContentPage x:Class="InteractiveReadingTool.UserLogin"
+        xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        Title="Login Screen">
+       
+        <Grid RowDefinitions="4*,*,*,4*">
+            <Label Grid.Row="0" Text="Login" FontSize="25" HorizontalOptions="Center" VerticalOptions="End" Margin="0,20,0,0"/>
+            
+            <HorizontalStackLayout Grid.Row="1" VerticalOptions="End" HorizontalOptions="Center">
+                <Entry x:Name="UsernameTextBox" WidthRequest="300" HeightRequest="30" Placeholder="Enter Username"/>
+            </HorizontalStackLayout>
+            
+            
+            <HorizontalStackLayout Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center">
+                <Entry x:Name="PasswordBox" WidthRequest="300" HeightRequest="30"  Placeholder="Enter Password" IsPassword="True"/>
+            </HorizontalStackLayout>
+            
 
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Text="Username:" Margin="0,0,0,5"/>
-            <TextBox x:Name="UsernameTextBox" Width="200" Height="30"/>
+            <Button Grid.Row="3" Text="Submit" WidthRequest="100" HeightRequest="30" Margin="0" BackgroundColor="#ef0100" VerticalOptions="Start"/> 
+                    <!-- Content="Login"--><!-- Click="LoginButton_Click"  -->
+        </Grid>
+</ContentPage>
 
-            <TextBlock Text="Password:" Margin="10,20,0,5"/>
-            <PasswordBox x:Name="PasswordBox" Width="200" Height="30"/>
-
-            <Button Content="Login" Width="100" Height="30" Margin="0,30,0,0" 
-                    Click="LoginButton_Click"/>
-        </StackPanel>
-    </Grid>
-</Window>
