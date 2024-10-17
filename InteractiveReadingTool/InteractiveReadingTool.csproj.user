@@ -3,7 +3,7 @@
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net8.0-android</ActiveDebugFramework>
-    <ActiveDebugProfile>Pixel Tablet API VanillaIceCream</ActiveDebugProfile>
+    <ActiveDebugProfile>Tablet Xh-DPI - API 34 (Android 14.0 - API 34)</ActiveDebugProfile>
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
     <DefaultDevice>Pixel_Tablet_API_VanillaIceCream</DefaultDevice>
   </PropertyGroup>
