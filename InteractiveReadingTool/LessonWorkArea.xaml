@@ -1,0 +1,68 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InteractiveReadingTool.LessonWorkArea">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Button" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#ef0100" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="18" />
+                <Style.Triggers>
+                    <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                        <Setter Property="TextColor" Value="#ef0100" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style x:Key="Label" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="20" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="75,*,*" ColumnDefinitions="*">
+        <Frame Grid.Row="0" BackgroundColor="#ef0100" CornerRadius="5" Padding="0" Margin="0" HorizontalOptions="FillAndExpand" HeightRequest="75">
+            <Grid RowDefinitions="*" ColumnDefinitions="*,*,*,*,*,*,2*,*">
+                <ImageButton WidthRequest="75" HeightRequest="50" Grid.Column="0" HorizontalOptions="Start" Source="home_icon.png"/>
+                <Button Style="{StaticResource Button}" WidthRequest="125" Grid.Column="1" Text="Keyboard" HorizontalOptions="Start"/>
+                <Button Style="{StaticResource Button}" WidthRequest="75" Grid.Column="2" Text="A/a" HorizontalOptions="Center"/>
+                <ImageButton WidthRequest="75" HeightRequest="50" Grid.Column="3" HorizontalOptions="Start" Source="eraser_icon.png"/>
+                <Button Style="{StaticResource Button}" WidthRequest="120" Grid.Column="4" Text="TextBox" HorizontalOptions="Start"/>
+                <ImageButton WidthRequest="75" HeightRequest="50" Grid.Column="5" HorizontalOptions="End" Source="larrow.png"/>
+                <Label Style="{StaticResource Label}" Grid.Column="6" Text="Level 1, Lesson 2.1" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <ImageButton WidthRequest="75" HeightRequest="50" Grid.Column="7" HorizontalOptions="Start" Source="rarrow.png"/>
+            </Grid>
+        </Frame>
+
+        
+
+        <Frame Grid.Row="1" BackgroundColor="Transparent" BorderColor="Black" CornerRadius="5" Padding="0" HorizontalOptions="FillAndExpand" HeightRequest="440">
+            
+            <Grid RowDefinitions="*" ColumnDefinitions="*,2*">
+                 
+                <Button Grid.Column="0" WidthRequest="20" Text="-" Clicked="OnMenuButtonClicked" HorizontalOptions="Start" BackgroundColor="#FF706D6D"/>
+
+                <StackLayout x:Name="FlyoutMenu" IsVisible="False" BackgroundColor="LightGray" Padding="10" Grid.Column="0">
+                    <Grid RowDefinitions="*,*,*,*,*" ColumnDefinitions="*,*">
+                        <Button Style="{StaticResource Button}" Grid.Row="0" Grid.Column="0" Text="Back" Clicked="OnBackClicked" />
+                        <Button Style="{StaticResource Button}" WidthRequest="100" Grid.Row="0" Grid.Column="1" Text="a" />
+                        <Button Style="{StaticResource Button}" WidthRequest="100" Grid.Row="1" Grid.Column="1" Text="e" />
+                        <Button Style="{StaticResource Button}" WidthRequest="100" Grid.Row="2" Grid.Column="1" Text="i" />
+                        <Button Style="{StaticResource Button}" WidthRequest="100" Grid.Row="3" Grid.Column="1" Text="o" />
+                        <Button Style="{StaticResource Button}" WidthRequest="100" Grid.Row="4" Grid.Column="1" Text="u" />
+                    </Grid>
+                </StackLayout>
+
+            </Grid>
+
+        </Frame>
+
+        <Frame Grid.Row="2" BackgroundColor="Transparent" BorderColor="Black" CornerRadius="5" Padding="0" Margin="0" HorizontalOptions="FillAndExpand" HeightRequest="400">
+
+        </Frame>
+    </Grid>
+
+</ContentPage>

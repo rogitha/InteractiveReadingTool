@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InteractiveReadingTool.StudentDirectory"
+             Title="StudentDirectory">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <VerticalStackLayout Grid.Column="0">
+            <!--This HorizontalStackLayout is labeled "Students" and will have buttons to add and remove students -->
+            <Grid BackgroundColor="Red" ColumnDefinitions="*, 2*, *">
+                <ImageButton HeightRequest="45" Grid.Column="0" Source="Resources/Images/ic_fluent_add_square_24_filled.svg"/>
+                <Label Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Students" FontSize="Large" TextColor="White"/>
+                <ImageButton Grid.Column="2" Source="Resources/Images/ic_fluent_subtract_square_24_filled.svg"/>
+            </Grid>
+            <!--This CollectionView will pull the list of students from a database when functional. -->
+            <CollectionView x:Name="FakeStudentData" SelectionMode="Single">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="10"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding}" Padding="20,0,0,0"/>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+        <!--This pane will be the detailed view the selected student.-->
+        <Grid BackgroundColor="Bisque" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--This grid shows the dark red title bar with student name, picture, and date of enrollment.-->
+            <Grid BackgroundColor="#bc0000"  ColumnSpacing="10" HeightRequest="45" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image HeightRequest="45" Grid.Column="0" Source="Resources/Images/no_profile_picture.png"/>
+                <Label TextColor="White" Grid.Column="1" Text="Student Name" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <VerticalStackLayout Grid.Column="2">
+                    <Label TextColor="White" Text="Date Enrolled:"/>
+                    <Label TextColor="White" Text="03/9/2024"/>
+                </VerticalStackLayout>
+            </Grid>
+
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Blue" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Grid VerticalOptions="FillAndExpand" Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Label HorizontalTextAlignment="Center"
+                           Grid.Row="0"
+                           HeightRequest="30" 
+                           FontSize="Medium" 
+                           TextColor="White" 
+                           VerticalTextAlignment="Center" 
+                           BackgroundColor="#bc0000" 
+                           Text="Student Progress"/>
+                    
+                    
+                    <CollectionView x:Name="LessonsList" 
+                                    Grid.Row="1"
+                                    SelectionMode="Single" 
+                                    BackgroundColor="LightYellow"  
+                                    VerticalOptions="FillAndExpand">
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Vertical"/>
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Label Text="{Binding}" Padding="20,10,0,0"/>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    
+                    
+                    
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</ContentPage>
