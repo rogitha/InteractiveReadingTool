@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InteractiveReadingTool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+4eca6a5a9c20ba15f521842171c684283b66d9aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ffe4c9e833f20bb34585bdda7545240c3288e1f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("InteractiveReadingTool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InteractiveReadingTool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
